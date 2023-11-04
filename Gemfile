@@ -66,6 +66,9 @@ group :development, :test do
 
   # It's a library for generating fake data such as names, addresses, and phone numbers. [https://github.com/faker-ruby/faker]
   gem 'faker'
+
+  # Capybara helps you test web applications by simulating how a real user would interact with your app. [https://github.com/teamcapybara/capybara]
+  gem 'capybara'
 end
 
 group :development do
@@ -77,8 +80,9 @@ group :development do
 end
 
 group :test do
-  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem "capybara"
+  # Selenium implements the W3C WebDriver protocol to automate popular browsers. [https://github.com/SeleniumHQ/selenium/wiki/Ruby-Bindings]
   gem "selenium-webdriver"
+
+  # Run Selenium tests more easily with automatic installation and updates for all supported webdrivers. [https://github.com/titusfortner/webdrivers]
   gem "webdrivers"
 end
