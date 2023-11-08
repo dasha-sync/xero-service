@@ -84,4 +84,7 @@ group :test do
 
   # SimpleCov is a code coverage analysis tool for Ruby. [https://github.com/simplecov-ruby/simplecov]
   gem 'simplecov', require: false
+
+  # Brings back assigns to your controller tests, assert_template. [https://github.com/rails/rails-controller-testing]
+  gem 'rails-controller-testing'
 end
