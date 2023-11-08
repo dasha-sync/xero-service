@@ -79,7 +79,9 @@ group :test do
   # Strategies for cleaning databases using ActiveRecord. [https://github.com/DatabaseCleaner/database_cleaner]
   gem 'database_cleaner-active_record'
 
-
   # Simple One-Liner Tests for Rails. [https://github.com/thoughtbot/shoulda-matchers]
   gem 'shoulda-matchers'
+
+  # SimpleCov is a code coverage analysis tool for Ruby. [https://github.com/simplecov-ruby/simplecov]
+  gem 'simplecov', require: false
 end
