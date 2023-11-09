@@ -86,6 +86,9 @@ group :development do
 
   # RuboCop is a Ruby static code analyzer (a.k.a. linter) and code formatter. [https://github.com/rubocop/rubocop]
   gem 'rubocop', require: false
+
+  # A RuboCop extension focused on enforcing Rails best practices and coding conventions. [https://github.com/rubocop/rubocop-rails]
+  gem 'rubocop-rails', require: false
 end
 
 group :test do
