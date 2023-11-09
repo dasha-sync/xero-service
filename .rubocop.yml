@@ -1,0 +1,22 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+
+Style/Documentation:
+  Enabled: false
+
+AllCops:
+  NewCops: enable
+  SuggestExtensions: false
+
+Metrics/MethodLength:
+  Exclude:
+    - db/migrate/**/*
+
+Metrics/BlockLength:
+  Exclude:
+    - config/environments/**/*
+
+Rails/LexicallyScopedActionFilter:
+  Exclude:
+    - app/controllers/**/*
