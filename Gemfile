@@ -61,6 +61,9 @@ group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 
+  # Rspec-rails is a testing framework for Rails 5+. [https://github.com/rspec/rspec-rails/tree/6-0-maintenance]
+  gem 'rspec-rails'
+
   # A fixtures replacement with a straightforward definition syntax [https://github.com/thoughtbot/factory_bot_rails]
   gem 'factory_bot_rails'
 
@@ -88,4 +91,16 @@ group :test do
 
   # Run Selenium tests more easily with automatic installation and updates for all supported webdrivers. [https://github.com/titusfortner/webdrivers]
   gem "webdrivers"
+
+  # Strategies for cleaning databases using ActiveRecord. [https://github.com/DatabaseCleaner/database_cleaner]
+  gem 'database_cleaner-active_record'
+
+  # Simple One-Liner Tests for Rails. [https://github.com/thoughtbot/shoulda-matchers]
+  gem 'shoulda-matchers'
+
+  # SimpleCov is a code coverage analysis tool for Ruby. [https://github.com/simplecov-ruby/simplecov]
+  gem 'simplecov', require: false
+
+  # Brings back assigns to your controller tests, assert_template. [https://github.com/rails/rails-controller-testing]
+  gem 'rails-controller-testing'
 end
