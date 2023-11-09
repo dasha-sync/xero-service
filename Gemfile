@@ -83,6 +83,9 @@ group :development do
 
   # A Ruby gem to load environment variables from `.env` [https://github.com/bkeepers/dotenv]
   gem 'dotenv-rails'
+
+  # RuboCop is a Ruby static code analyzer (a.k.a. linter) and code formatter. [https://github.com/rubocop/rubocop]
+  gem 'rubocop', require: false
 end
 
 group :test do
