@@ -1,0 +1,10 @@
+.footer {
+    position: fixed;
+    bottom: 0 !important;
+    width: 100% !important;
+}
+
+.secondary {
+    max-width: 700px;
+    margin-top: 10% !important;
+}
