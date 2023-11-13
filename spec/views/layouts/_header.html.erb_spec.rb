@@ -7,7 +7,7 @@ RSpec.describe 'layouts/_header.html.erb', type: :view do
     before { render template: 'layouts/application' }
 
     it 'include header text' do
-      expect(rendered).to include('button', 'Home')
+      expect(rendered).to include('a', 'Home')
     end
   end
 end
