@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+  app:
+    container_name: xero-container
+    image: postgres
+    build: ./
+    ports:
+      - "5000:3000"
+    env_file:
+      - ./.env
+    volumes:
+      - .:/xero-service
+      - ./tmp/db:/var/lib/postgresql/data
+    restart: always
+    healthcheck:
+      test: curl --fail http://localhost:5000 || exit 1
+      interval: 30s
+      retries: 3
+      start_period: 15s
+      timeout: 5s
