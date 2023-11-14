@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   protected
 
   def configure_sign_up_params
-    attributes = %i[first_name last_name email password password password_confirmation]
+    attributes = %i[username email password password password_confirmation]
     devise_parameter_sanitizer.permit(:sign_up, keys: attributes)
   end
 end
