@@ -3,6 +3,16 @@
       <h3>Hello!</h3>
       <hr>
       <p class="text-shadow">Explore Xero accounting software and its tools for small businesses, accountants, and bookkeepers.</p>
+      <a href="<%= authorization_url %>">
+        <div class="block-link alert alert-info d-flex justify-content-between">
+          <img class="img" src='https://www.xero.com/etc/designs/xero-cms/clientlib/assets/img/logo/logo-xero-blue.svg'>
+          <% if current_user && !current_user.user_token.token_set %>
+            <h5>Click to authorize organisation</h5>
+          <% elsif current_user %>
+            <h5>Click to authorize +1 organisations</h5>
+          <% end %>
+        </div>
+      </a><br><br><br><br>
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
 </div>

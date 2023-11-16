@@ -17,3 +17,29 @@
     margin-top: 3%;
     padding: 2%;
 }
+
+.block-link {
+    min-width: 300px;
+    height: 7.5% !important;
+    text-align: center;
+    padding: 15px;
+    top: 40px;
+    left: 568px;
+    position: fixed;
+    bottom: 0;
+    margin: auto;
+    border-radius: var(--bs-alert-border-radius);
+}
+
+.block-link:hover {
+    border: 1px solid #015ce4;
+    background-color: #b6d2fc;
+}
+
+.img {
+    margin-right: 10px;
+}
+
+.id {
+    width: 30px;
+}
