@@ -1,5 +1,9 @@
 .fixed-bottom {
     border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    width: 500px;
+    position: fixed !important;
+    left: 65% !important;
+    top: 70% !important;
 }
 
 .flash-alert {
