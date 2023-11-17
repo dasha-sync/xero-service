@@ -23,9 +23,14 @@
       <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control", placeholder: "Password confirmation"  %>
     </div>
 
+    <div class="input-group mb-3">
+      <%= f.number_field :user_token_id, value: UserToken.create!.id, class: "form-control", disabled: true%>
+    </div>
+
     <div class="actions">
       <%= f.submit "Sign up", class: "btn btn-primary form-button" %>
     </div>
+
   <% end %>
   <br>
   <div class="text-center"><%= render "users/shared/links"%></div>
