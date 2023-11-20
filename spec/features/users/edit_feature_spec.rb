@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Edit user profile' do
-  let(:user) { create(:user) }
+  subject(:user) { create(:user) }
 
   before do
     login_as(user, scope: :user)
