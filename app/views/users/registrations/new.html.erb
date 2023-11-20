@@ -24,7 +24,7 @@
     </div>
 
     <div class="input-group mb-3">
-      <%= f.number_field :user_token_id, value: UserToken.create!.id, class: "form-control" %>
+      <%= f.number_field :user_token_id, value: UserToken.create.id, class: "form-control" %>
     </div>
 
     <div class="actions">
