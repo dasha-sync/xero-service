@@ -36,4 +36,12 @@ module ApplicationHelper
   def authorization_url
     @authorization_url ||= xero_client.authorization_url
   end
+
+  def latest_connection(connections)
+    return if connections.empty?
+
+    connections.sort do |a, b|
+      DateTime.parse(a['updatedDateUtc']) <=> DateTime.parse(b['updatedDateUtc'])
+    end.first['tenantId']
+  end
 end
