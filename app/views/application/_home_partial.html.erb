@@ -1,18 +1,35 @@
+<br>
 <% if current_user && current_user.user_token.token_set %>
   <h6>Rails session: <u><%= current_user.email %></u></h6>
   <h6>Xero Token Expired: <u><%= token_expired %></u></h6>
   <hr>
   <h3>Decoded ID Token</h3>
-  <%= id_token %>
+  <hr>
+  <code>
+    <pre>
+      <%= JSON.pretty_generate(id_token) %>
+    </pre>
+  </code>
   <hr>
   <h3>Decoded Access Token</h3>
-  <%= access_token %>
+  <hr>
+  <code>
+    <pre>
+      <%= JSON.pretty_generate(access_token) %>
+    </pre>
+  </code>
   <hr>
   <h3>Rest of Token Set</h3>
-  <%= current_user.user_token.token_set.without('id_token', 'access_token') %>
+  <hr>
+  <code>
+    <pre>
+      <%= JSON.pretty_generate(current_user.user_token.token_set.without('id_token', 'access_token')) %>
+    </pre>
+  </code>
   <hr>
 <% elsif current_user %>
   Authenticate with your <%= link_to 'Xero account', authorization_url %>
 <% else %>
   To begin <%= link_to 'Log In', new_user_session_path %> or <%= link_to 'Sign Up', new_user_registration_path %>, then you can authenticate with Xero account
 <% end %>
+<br><br><br><br><br><br><br><br><br><br>

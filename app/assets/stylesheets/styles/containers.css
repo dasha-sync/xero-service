@@ -21,12 +21,7 @@
 .block-link {
     min-width: 300px;
     height: 7.5% !important;
-    text-align: center;
-    padding: 15px;
-    top: 40px;
-    left: 568px;
     position: fixed;
-    bottom: 0;
     margin: auto;
     border-radius: var(--bs-alert-border-radius);
 }
@@ -42,4 +37,9 @@
 
 .id {
     width: 30px;
+}
+
+.footer {
+    background-color: white !important;
+    min-height: 50px;
 }
