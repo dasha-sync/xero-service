@@ -23,10 +23,11 @@ You can clone an existing repository from GitHub.com to your local computer, or 
 
 ## Configure
 
-1. Change directory to `xero-service`:
+1. Change directory to `xero-service` and go to branch `xero-service`:
 
     ```sh
     $ cd xero-service
+    $ git checkout xero-service
     ```
 
 1. Installing dependencies:
@@ -39,10 +40,15 @@ You can clone an existing repository from GitHub.com to your local computer, or 
     $ yarn run build
     ```
 
-1. You can go to `.env`: 
+1. You can go to `.env.example`, rename it to `.env` and change following values: `POSTGRES_USER` is a username that you created to authenticate in MySQL; `POSTGRES_PASSWORD` is the password with which your `POSTGRES_USER` can authenticate, `CLIENT_ID` is your id in Xero account and `CLIENT_SECRET` is a key that you generate in your Xero account. You mast get something like that: 
 
     ```sh
-        to edit
+    $ POSTGRES_USER=username
+    $ POSTGRES_PASSWORD=password
+    $ CLIENT_ID='id'
+    $ CLIENT_SECRET='key'
+    $ REDIRECT_URI='http://localhost:3000/callback'
+    $ SCOPES="openid profile email"
     ```
 
 1. Then you should create the databases defined in the current environment, run pending migrations and fill the current database with data defined in `db/seeds.rb`:
