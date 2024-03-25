@@ -23,11 +23,11 @@ You can clone an existing repository from GitHub.com to your local computer, or 
 
 ## Configure
 
-1. Change directory to `xero-service` and go to branch `xero-service`:
+1. Change directory to `xero-service` and go to branch `xero-control`:
 
     ```sh
     $ cd xero-service
-    $ git checkout xero-service
+    $ git checkout xero-control
     ```
 
 1. Installing dependencies:
