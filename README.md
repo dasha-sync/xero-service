@@ -40,7 +40,7 @@ You can clone an existing repository from GitHub.com to your local computer, or 
     $ yarn run build
     ```
 
-1. You can go to `.env.example`, rename it to `.env` and change following values: `POSTGRES_USER` is a username that you created to authenticate in MySQL; `POSTGRES_PASSWORD` is the password with which your `POSTGRES_USER` can authenticate, `CLIENT_ID` is your id in Xero account and `CLIENT_SECRET` is a key that you generate in your Xero account. You mast get something like that: 
+1. You can go to `.env.example`, rename it to `.env` and change following values: `POSTGRES_USER` is a username that you created to authenticate in MySQL; `POSTGRES_PASSWORD` is the password with which your `POSTGRES_USER` can authenticate; `CLIENT_ID` is your id in Xero account; `CLIENT_SECRET` is a key that you generate in your Xero account. You mast get something like that: 
 
     ```sh
     $ POSTGRES_USER=username
